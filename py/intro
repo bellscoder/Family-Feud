@@ -1,0 +1,5 @@
+# Unit_2_CodeYour_Own
+def intro()
+  print("Welcome to Family Fued")
+  print("You have 3 chances to get try to get all of the answers\n")
+  print("Try to get as many points as you can!")
