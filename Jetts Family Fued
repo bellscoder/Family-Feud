@@ -1,0 +1,82 @@
+import random
+import time
+
+# Question bank
+questions = [
+    {
+        "question": "Name something you do before going to bed",
+        "answers": {
+            "brush teeth": 30,
+            "read": 20,
+            "set alarm": 15,
+            "drink water": 10,
+            "check phone": 5
+        }
+    },
+    {
+        "question": "Name a popular pizza topping",
+        "answers": {
+            "pepperoni": 35,
+            "mushrooms": 25,
+            "sausage": 20,
+            "onions": 10,
+            "olives": 5
+        }
+    }
+]
+
+def play_round(qdata):
+    guessed = []
+    score = 0
+    strikes = 0
+    max_strikes = 3
+    print(f"\n🟡 Question: {qdata['question']}")
+    while len(guessed) < len(qdata["answers"]) and strikes < max_strikes:
+        guess = input("🔹 Your guess: ").lower()
+        if guess in qdata["answers"] and guess not in guessed:
+            points = qdata["answers"][guess]
+            print(f"✅ '{guess}' is worth {points} points!")
+            guessed.append(guess)
+            score += points
+        else:
+            strikes += 1
+            print(f"❌ Strike {strikes}/{max_strikes}!")
+    print("📝 Round over! Answers were:")
+    for ans, pts in qdata["answers"].items():
+        print(f" - {ans} ({pts} pts)")
+    return score
+
+def fast_money():
+    print("\n💰 FAST MONEY ROUND 💰")
+    bonus_q = {
+        "question": "Name something you bring to the beach",
+        "answers": {
+            "towel": 30,
+            "sunscreen": 25,
+            "umbrella": 20,
+            "snacks": 15,
+            "book": 10
+        }
+    }
+    score = 0
+    for i in range(3):
+        guess = input(f"🔸 Fast Money guess {i+1}: ").lower()
+        if guess in bonus_q["answers"]:
+            points = bonus_q["answers"][guess]
+            print(f"✅ '{guess}' is worth {points} points!")
+            score += points
+        else:
+            print("❌ No points!")
+    return score
+
+# Game loop
+print("🎉 Welcome to Family Feud: Turbo Edition!")
+total_score = 0
+random.shuffle(questions)
+for q in questions:
+    total_score += play_round(q)
+
+# Fast Money
+total_score += fast_money()
+
+print(f"\n🏆 Final Score: {total_score} points!")
