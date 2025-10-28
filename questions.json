@@ -1,0 +1,11 @@
+[
+  {
+    "question": "Name something people do on their birthday",
+    "answers": {
+      "party": 40,
+      "cake": 30,
+      "presents": 20,
+      "sleep in": 10
+    }
+  }
+]
