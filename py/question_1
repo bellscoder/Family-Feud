@@ -1,6 +1,6 @@
 ## Question 1 Dictionary 
 
-question_1 = {
+question_1_dict = {
     "question": "Why are kids late for school? ",
     "answers": {
         "slept late ": 35,
