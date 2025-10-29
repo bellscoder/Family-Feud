@@ -5,7 +5,7 @@ question_3_dict = {
     "answers": {
         "skip breakfast": 35,
         "speed": 25,
-        "forget importing things": 15,
+        "forget important things": 15,
         "blame traffic": 10,
     }
 }
