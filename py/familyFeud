@@ -13,6 +13,6 @@ from question_3 import question_3_dict
 function_defs.intro()
 
 # Print the first question
-question
+print(question_1_dict["question"])
 
 
