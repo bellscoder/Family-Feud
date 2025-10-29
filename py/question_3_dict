@@ -7,6 +7,5 @@ question_3_dict = {
         "speed": 25,
         "forget importing things": 15,
         "blame traffic": 10,
-        "call in sick": 5
     }
 }
