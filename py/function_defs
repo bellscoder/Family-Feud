@@ -1,7 +1,18 @@
 # Unit_2_CodeYour_Own
+
 def intro()
   print("Welcome to Family Fued")
   print("You have 3 chances to get try to get all of the answers\n")
   print("Try to get as many points as you can!")
 
+
+import sys
+import time
+
+def typewriter(text, speed=0.05):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(speed)
+    print() 
 
