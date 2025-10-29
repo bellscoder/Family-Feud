@@ -9,5 +9,5 @@ question_2_dict = {
       "Wallet":20,
       "Glasses":10,
       "Lunch":5, 
-     }
-              }
+      }
+}
