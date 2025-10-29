@@ -16,6 +16,17 @@ def typewriter(text, speed=0.05):
         time.sleep(speed)
     print() 
 
+def check_answer1(answer_to_q1,guesses_1,question_1_dict):
+    user_answer = answer_to_q1.strip().lower()
+    correct_answer = question_1_dict["answer"].strip().lower()
+
+    if user_answer == correct_answer:
+        print("Correct! " + str(guesses_1) + " remaining.")
+        return True
+    else:
+        print("Incorrect. Try again!")
+        return False
+
 #outro
 def outro():
   print("Thank you for playing Bells Fued!")
@@ -25,11 +36,11 @@ def outro():
   print("You said: " + question_1_dict["question"])
   print()
   typewriter("Survey says... " + question_1_dict["answers"])
-typewriter("On question 2 we asked you what people might forget when they leave the house.")
+  typewriter("On question 2 we asked you what people might forget when they leave the house.")
   print("You said: " + question_2_dict["question"])
   print()
   typewriter("Survey says... " + question_3_dict["answers"])
-typewriter("On question 1 we asked you what people do when they are late for work.")
+  typewriter("On question 1 we asked you what people do when they are late for work.")
   print("You said: " + question_3_dict["question"])
   print()
   typewriter("Survey says... " + question_3_dict["answers"])
