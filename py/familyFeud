@@ -5,6 +5,6 @@
 import random
 import math
 import intro
-
+from question_1 import question_1_dict
 
 
