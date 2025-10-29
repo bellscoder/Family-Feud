@@ -1,16 +1,12 @@
-#question 3
-print("What do most people do on their free time?: ")
-answer = input()
-#answers
-#Watch tv - 35 points
-#Scroll social media  — 25 points
-#Play video games  — 10 points
-#Clean  — 5 points
-if answer3 == "Watch tv" or answer == "watch tv":
-  score += 35
-elif answer3 == "Scroll social media" or answer == "scroll social media":
-  score += 25
-elif answer3 == "Play video games" or answer == "play video games":
-  score += 10
-elif answer3 == "clean" or answer == "Clean":
-  score += 5
+## Question 3 Dictionary
+
+question_3 = {
+    "question": "Name something people do when they’re bored.",
+    "answers": {
+        "watch tv": 35,
+        "scroll social media": 25,
+        "eat snacks": 15,
+        "nap": 10,
+        "call a friend": 5
+    }
+}
