@@ -22,6 +22,6 @@ def outro():
   print("Here are your answers: ")
   print()
   typewriter("On question 1 we asked you why are kids late for school?")
-  print("You said: " + str(question))
+  print("You said: " + question_1_dict["question"]
   print()
   typewirter("Survey says..." print(
