@@ -20,6 +20,7 @@ def typewriter(text, speed=0.05):
 print("Thank you for playing Bells Fued!")
 print("Here are your answers: ")
 print()
-typewriter("On question 1 we asked why are kids late for school?")
-print("You said: " + 
-
+typewriter("On question 1 we asked you why are kids late for school?")
+print("You said: " + str(question))
+print()
+typewirter("Survey says..." print(
