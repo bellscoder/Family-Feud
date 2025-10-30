@@ -36,9 +36,9 @@ while running:
     answer_to_q1 = input()
     
     correct1 = check_answer1(answer_to_q1,guesses_1_question_1_dict)
-      print(correct1)
-      if not correct1:
-        guesses1 -= 1
+    print(correct1)
+    if not correct1:
+      guesses1 -= 1
     
     if guesses_1 == 0:
       team_1 = False
