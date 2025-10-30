@@ -19,11 +19,13 @@ team_1_points = 0
 
 team_2_points = 0
 running = True
-  #Strikes
-  guesses_1 = 3
+
+## Strikes
+guesses_1 = 3
+guesses_2 = 3
   
-  guesses_2 = 3
-  while running:
+## While Loop
+while running:
     if team_1:
       print("It is currently team one's turn, with " + str(guesses_1) + " guesses remaining.")
     else:
