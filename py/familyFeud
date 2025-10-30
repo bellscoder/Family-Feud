@@ -18,32 +18,32 @@ team_1 = True
 team_1_points = 0
 
 team_2_points = 0
-
-#Strikes
-guesses_1 = 3
-
-guesses_2 = 3
-
-if team_1:
-  print("It is currently team one's turn, with " + str(guesses_1) + " guesses remaining.")
-else:
-  print("It is currently team two's turn, with " + str(guesses_2) + " guesses remaining.")
-
-# Print the first question
-print(question_1_dict["question"])
-answer = input()
-
-if answer != question_1_dict["answer"]:
-  guesses_1 -= 1
-
-if guesses_1 == 0:
-  team_1 = False
-
-answer = answer.lower()
-if answer in question_1_dict["answer"]:
-  points = (question_1_dict[answers][answer])
-  if team_1:
-    team_1_points += points
-  else:
-    team_2_points += points
+running = True
+  #Strikes
+  guesses_1 = 3
   
+  guesses_2 = 3
+  while running:
+    if team_1:
+      print("It is currently team one's turn, with " + str(guesses_1) + " guesses remaining.")
+    else:
+      print("It is currently team two's turn, with " + str(guesses_2) + " guesses remaining.")
+    
+    # Print the first question
+    print(question_1_dict["question"])
+    answer = input()
+    
+    if answer != question_1_dict["answer"]:
+      guesses_1 -= 1
+    
+    if guesses_1 == 0:
+      team_1 = False
+    
+    answer = answer.lower()
+    if answer in question_1_dict["answer"]:
+      points = (question_1_dict[answers][answer])
+    if team_1:
+      team_1_points += points
+    else:
+      team_2_points += points
+      
