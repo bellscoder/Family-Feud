@@ -29,12 +29,13 @@ correct_answer = False
 ## Strikes
 guesses_1 = 3
 guesses_2 = 3
-if team_1:
-  current_guess = guesses_1
-elif not team_1:
-  current_guess = guesses_2
+
 ## While Loop
 while running:
+  if team_1:
+    current_guess = guesses_1
+  elif not team_1:
+    current_guess = guesses_2
     if team_1:
       print("It is currently team one's turn, with " + str(current_guess) + " guesses remaining.")
     else:
