@@ -1,9 +1,9 @@
 🧠 Family Feud: Command Line Edition
 A fast-paced trivia game inspired by the classic Family Feud — now playable right from your terminal. Compete solo or with friends to guess the top answers to survey-style questions and rack up points before your guesses run out.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 🎮 Game Overview
 Family Feud: Command Line Edition challenges players to think like the crowd. Each round presents a question with multiple popular answers. You get three chances to guess as many correct responses as possible. The more accurate your guess, the more points you earn.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 🚀 Getting Started
 Requirements
 Python 3.10+
