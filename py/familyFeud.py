@@ -23,7 +23,10 @@ running = True
 ## Strikes
 guesses_1 = 3
 guesses_2 = 3
-  
+if team_1:
+  current_guess = guesses_1
+else:
+  current_guess = guesses_2
 ## While Loop
 while running:
     if team_1:
@@ -39,9 +42,9 @@ while running:
     correct1 = function_defs.check_answer1(answer_to_q1,guesses_1,question_1_dict)
     print(correct1)
     if not correct1:
-      guesses_1 -= 1
+      current_guess -= 1
     
-    if guesses_1 == 0:
+    if current_guess == guesses_1 and current_guess == 0:
       team_1 = False
     
     answer = answer_to_q1.lower()
