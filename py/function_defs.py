@@ -28,19 +28,18 @@ def check_answer1(answer_to_q1,guesses_1,question_1_dict):
         return False
 
 #outro
-def outro(question_1_dict,question_2_dict,question_3_dict):
-  print("Thank you for playing Bells Fued!")
-  print("Here are your answers: ")
-  print()
-  typewriter("On question 1 we asked you why are kids late for school.")
-  print("You said: " + question_1_dict["question"])
-  print()
-  typewriter("Survey says... " + question_1_dict["answers"])
-  typewriter("On question 2 we asked you what people might forget when they leave the house.")
-  print("You said: " + question_2_dict["question"])
-  print()
-  typewriter("Survey says... " + question_3_dict["answers"])
-  typewriter("On question 1 we asked you what people do when they are late for work.")
-  print("You said: " + question_3_dict["question"])
-  print()
-  typewriter("Survey says... " + question_3_dict["answers"])
+def outro(question_1_dict, question_2_dict, question_3_dict, answer_q1, answer_q2, answer_q3):
+     print("Thank you for playing Bells Feud!")
+      print("Here are your answers:\n")
+      typewriter("On question 1 we asked you why are kids late for school.")
+      print("You said: " + str(answer_q1))
+      typewriter("Survey says... " + str(question_1_dict["answers"]) + "\n")
+  
+      typewriter("On question 2 we asked you what people might forget when they leave the house.")
+     print("You said: " + str(answer_q2))
+     typewriter("Survey says... " + str(question_2_dict["answers"]) + "\n")
+
+     typewriter("On question 3 we asked you what people do when they are late for work.")
+     print("You said: " + str(answer_q3))
+     typewriter("Survey says... " + str(question_3_dict["answers"]) + "\n")
+
