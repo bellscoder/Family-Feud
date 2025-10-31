@@ -13,6 +13,8 @@ from question_3 import question_3_dict
 # Show the intro to the game
 function_defs.intro()
 
+times = 0
+
 team_1 = True
 
 team_1_points = 0
@@ -44,9 +46,12 @@ while running:
     if not correct1:
       current_guess -= 1
     
-    if current_guess == guesses_1 and current_guess == 0:
+    if current_guess == 0 and times == 0:
       team_1 = False
-    
+      times += 1
+    elif current_guess == 0 and times == 1:
+      team_1 = True
+      times = 0
     answer = answer_to_q1.lower()
     if answer in question_1_dict["answers"]:
       points = (question_1_dict["answers"][answer])
