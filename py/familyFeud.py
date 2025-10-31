@@ -67,4 +67,4 @@ while running:
       team_2_points += points
       correct_answer = False
 if not running:
-function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
+  function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
