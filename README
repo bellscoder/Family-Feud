@@ -57,11 +57,13 @@ Unit_2_CodeYour_Own/
 │   ├── question_1.py         # Question data
 │   └── ...
 └── README                    # This file
------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 👥 Credits
 Developed by @bellscoder 
-Major contributions by @rugster — logic, debugging, and overall game wizardry 🧠✨ 
-Inspired by the classic Family Feud game format
+Major contributions by @rugster — lead developer, debugger, and architect behind the game’s core logic and functionality. 
+This project wouldn’t be what it is without Rugster’s dedication and problem-solving skills.
+
+Inspired by the classic Family Feud game format.
 ---------------------------------------------------------------------------------
 📜 License
 This project is licensed under the MIT License.
