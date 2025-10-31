@@ -1,7 +1,67 @@
-A family feud game to play to test your skill.
-we are bonyon boys balzarlright
-big ol boi
-fat boi
-so lets lock in chattt and get to work.
-big q still on front wars.io
-rajhi
+🧠 Family Feud: Command Line Edition
+A fast-paced trivia game inspired by the classic Family Feud — now playable right from your terminal. Compete solo or with friends to guess the top answers to survey-style questions and rack up points before your guesses run out.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🎮 Game Overview
+Family Feud: Command Line Edition challenges players to think like the crowd. Each round presents a question with multiple popular answers. You get three chances to guess as many correct responses as possible. The more accurate your guess, the more points you earn.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🚀 Getting Started
+Requirements
+Python 3.10+
+----------------------------------
+No external libraries required
+----------------------------------
+Installation
+bash
+git clone https://github.com/bellscoder/Unit_2_CodeYour_Own
+cd Unit_2_CodeYour_Own/py
+python familyFeud.py
+----------------------------------
+🕹️ How to Play
+The game starts with a welcome message and instructions.
+
+You’ll be prompted with a question (e.g., “Why are kids late for school?”).
+
+Type your answer and press Enter.
+
+You have 3 guesses per round.
+
+Correct answers earn points based on popularity.
+
+Play continues until all questions are answered or guesses run out.
+----------------------------------
+✨ Features
+Clean terminal interface
+
+Smart answer matching (case-insensitive, trims extra spaces)
+
+Team-based scoring system
+
+Expandable question set via modular files
+------------------------------------------
+📸 Example Gameplay
+Code
+Why are kids late for school?
+> slept late
+✅ Correct! 3 guesses remaining.
+🧪 Known Issues
+Some answers may be sensitive to formatting if not cleaned properly
+
+No replay loop yet — restart the script to play again
+--------------------------------------------------------------------
+📁 Project Structure
+Code
+Unit_2_CodeYour_Own/
+├── py/
+│   ├── familyFeud.py         # Main game logic
+│   ├── function_defs.py      # Helper functions
+│   ├── question_1.py         # Question data
+│   └── ...
+└── README                    # This file
+-----------------------------------------------------------------------------
+👥 Credits
+Developed by @bellscoder 
+Major contributions by @rugster — logic, debugging, and overall game wizardry 🧠✨ 
+Inspired by the classic Family Feud game format
+---------------------------------------------------------------------------------
+📜 License
+This project is licensed under the MIT License.
