@@ -31,7 +31,7 @@ guesses_1 = 3
 guesses_2 = 3
 if team_1:
   current_guess = guesses_1
-else:
+elif not team_1:
   current_guess = guesses_2
 ## While Loop
 while running:
@@ -57,14 +57,20 @@ while running:
       team_1 = True
       times = 0
     answer = answer_to_q1.lower()
+  
     if answer in question_1_dict["answers"]:
       points = (question_1_dict["answers"][answer])
       correct_answer = True
+      
     if correct_answer and times == 0:
       team_1_points += points
       correct_answer = False
+      
     elif correct_answer and times == 1:
       team_2_points += points
       correct_answer = False
+
+  print(f"Team 1's score is [team_1_points].")
+  print(f"Team 2's score is [team_2_points].")
 if not running:
   function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
