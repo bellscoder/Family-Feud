@@ -20,6 +20,10 @@ team_1_points = 0
 team_2_points = 0
 running = True
 
+times = 0
+
+correct_answer = False
+
 ## Strikes
 guesses_1 = 3
 guesses_2 = 3
@@ -47,9 +51,12 @@ while running:
     answer = answer_to_q1.lower()
     if answer in question_1_dict["answers"]:
       points = (question_1_dict["answers"][answer])
-    if team_1:
+      correct_answer = True
+    if correct_answer and times == 0:
       team_1_points += points
-    else:
+      correct_answer = False
+    elif correct_answer and times == 1:
       team_2_points += points
+      correct_answer = False
 if not running:
   function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
