@@ -45,7 +45,7 @@ while running:
       team_1 = False
     
     answer = answer_to_q1.lower()
-    if answer in question_1_dict["answer"]:
+    if answer in question_1_dict["answers"]:
       points = (question_1_dict["answers"][answer])
     if team_1:
       team_1_points += points
