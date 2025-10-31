@@ -6,10 +6,18 @@
 import random
 import math
 import function_defs
+import random
 from question_1 import question_1_dict
 from question_2 import question_2_dict
 from question_3 import question_3_dict
 
+choosing = random.randint(1,3)
+if choosing == 1:
+  current_dict = question_1_dict
+elif choosing == 2:
+  current_dict = question_2_dict
+else:
+  current_dict = question_3_dict
 # Show the intro to the game
 function_defs.intro()
 
@@ -41,7 +49,7 @@ while running:
       print("It is currently team two's turn, with " + str(guesses_2) + " guesses remaining.")
     
     # Print the first question
-    q1 = question_1_dict
+    q1 = current_dict
     print(q1["question"])
     answer_to_q1 = input()
     
