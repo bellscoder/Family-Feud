@@ -52,7 +52,7 @@ while running:
   
   correct1 = function_defs.check_answer1(answer_to_q1,guesses_1,question_1_dict)
   print(correct1)
-  if not correct1:
+  if correct1 == False:
     current_guess -= 1
   
   if current_guess == 0 and times == 0 or times == 2 or times == 4 or times == 6:
