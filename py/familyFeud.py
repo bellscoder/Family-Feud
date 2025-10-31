@@ -31,14 +31,14 @@ guesses_1 = 3
 guesses_2 = 3
 if team_1:
   current_guess = guesses_1
-else:
+elif not team_1:
   current_guess = guesses_2
 ## While Loop
 while running:
     if team_1:
-      print("It is currently team one's turn, with " + str(guesses_1) + " guesses remaining.")
+      print("It is currently team one's turn, with " + str(current_guess) + " guesses remaining.")
     else:
-      print("It is currently team two's turn, with " + str(guesses_2) + " guesses remaining.")
+      print("It is currently team two's turn, with " + str(current_guess) + " guesses remaining.")
     
     # Print the first question
     q1 = question_1_dict
@@ -49,7 +49,6 @@ while running:
     print(correct1)
     if not correct1:
       current_guess -= 1
-    
     if current_guess == 0 and times == 0:
       team_1 = False
       times += 1
