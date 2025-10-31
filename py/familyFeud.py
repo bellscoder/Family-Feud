@@ -6,10 +6,12 @@
 import random
 import math
 import function_defs
+import random
 from question_1 import question_1_dict
 from question_2 import question_2_dict
 from question_3 import question_3_dict
 
+current_dict = question_1_dict
 # Show the intro to the game
 function_defs.intro()
 
@@ -21,8 +23,6 @@ team_1_points = 0
 
 team_2_points = 0
 running = True
-
-times = 0
 
 correct_answer = False
 
@@ -36,9 +36,9 @@ elif not team_1:
 ## While Loop
 while running:
     if team_1:
-      print("It is currently team one's turn, with " + str(current_guess) + " guesses remaining.")
+      print("It is currently team one's turn, with " + str(guesses_1) + " guesses remaining.")
     else:
-      print("It is currently team two's turn, with " + str(current_guess) + " guesses remaining.")
+      print("It is currently team two's turn, with " + str(guesses_2) + " guesses remaining.")
     
     # Print the first question
     q1 = question_1_dict
@@ -49,6 +49,7 @@ while running:
     print(correct1)
     if not correct1:
       current_guess -= 1
+    
     if current_guess == 0 and times == 0:
       team_1 = False
       times += 1
@@ -66,4 +67,4 @@ while running:
       team_2_points += points
       correct_answer = False
 if not running:
-  function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
+function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
