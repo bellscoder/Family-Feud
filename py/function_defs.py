@@ -21,7 +21,7 @@ def check_answer1(answer_to_q1,guesses_1,question_1_dict):
     answers_dict = question_1_dict.get("answers") or question_1_dict.get("answer") or {}
 
     if user_answer in answers_dict:
-        print("Correct! " + str(guesses_1) + " remaining.")
+        print("Correct!")
         return True
     else:
         print("Incorrect. Try again!")
