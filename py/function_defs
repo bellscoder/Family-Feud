@@ -18,9 +18,9 @@ def typewriter(text, speed=0.05):
 
 def check_answer1(answer_to_q1,guesses_1,question_1_dict):
     user_answer = answer_to_q1.strip().lower()
-    correct_answer = question_1_dict["answer"].strip().lower()
+    answers_dict = question_1_dict.get("answers") or question_1_dict.get("answer") or {}
 
-    if user_answer == correct_answer:
+    if user_answer in answers_dict:
         print("Correct! " + str(guesses_1) + " remaining.")
         return True
     else:
@@ -28,7 +28,7 @@ def check_answer1(answer_to_q1,guesses_1,question_1_dict):
         return False
 
 #outro
-def outro():
+def outro(question_1_dict,question_2_dict,question_3_dict):
   print("Thank you for playing Bells Fued!")
   print("Here are your answers: ")
   print()
