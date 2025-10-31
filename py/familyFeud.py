@@ -36,9 +36,9 @@ elif not team_1:
 ## While Loop
 while running:
     if team_1:
-      print("It is currently team one's turn, with " + str(guesses_1) + " guesses remaining.")
+      print("It is currently team one's turn, with " + str(current_guess) + " guesses remaining.")
     else:
-      print("It is currently team two's turn, with " + str(guesses_2) + " guesses remaining.")
+      print("It is currently team two's turn, with " + str(current_guess) + " guesses remaining.")
     
     # Print the first question
     q1 = question_1_dict
@@ -67,4 +67,4 @@ while running:
       team_2_points += points
       correct_answer = False
 if not running:
-function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
+  function_defs.outro(question_1_dict,question_2_dict,question_3_dict)
