@@ -81,11 +81,9 @@ elif times == 4:
   elif correct_answer and times == 1 or times == 3 or times == 5:
     team_2_points += points
     correct_answer = False
-
   if times == 2:
     running = False
     break
-
 if not running:
   # UPDATED: Pass all answers to outro
   function_defs.outro(question_1_dict, question_2_dict, question_3_dict, answer_q1, answer_q2, answer_q3)
