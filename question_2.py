@@ -1,0 +1,12 @@
+##Question2
+
+question_2_dict = {
+  "question": "Name something people forget when they leave the house.",
+  "answers":{
+      "Keys":35,
+      "Phone":25,
+      "Wallet":20,
+      "Glasses":10,
+      "Lunch":5, 
+  }
+}
